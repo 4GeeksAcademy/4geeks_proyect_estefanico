@@ -122,7 +122,7 @@ propiedad_dic = {'Propia': 0,
 
 
 if st.button('Predecir'):
-    prediccion = model.predict([[region_dic[region], nivel_socioeconomico_dic[nivel_socioeconomico], edad, nivel_educacional_dic[nivel_educacional], trabajo_semana_pasada_dic[trabajo_semana_pasada_dic], nacionalidad_dic[nacionalidad_dic], participacion_organizacion_dic[participacion_organizacion], tipo_vivienda_dic[tipo_vivienda], propiedad_dic[propiedad_dic]]])
-    st.write('Cambio de hogar', prediccion)
+    prediccion = model.predict([[region_dic[region], nivel_socioeconomico_dic[nivel_socioeconomico], edad, nivel_educacional_dic[nivel_educacional], trabajo_semana_pasada_dic[trabajo_semana_pasada], nacionalidad_dic[nacionalidad], participacion_organizacion_dic[participacion_organizacion], tipo_vivienda_dic[tipo_vivienda], propiedad_dic[propiedad]]])
+    st.write('Se cambia de comuna', prediccion)
 
 
