@@ -1,4 +1,4 @@
-from utils import db_connect
-engine = db_connect()
+from pickle import load
+import streamlit as st
 
-# your code here
+model = load(open("../models/modelo_estefanico_4geeks.sav", "rb"))
